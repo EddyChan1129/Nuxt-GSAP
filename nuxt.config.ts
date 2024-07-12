@@ -4,10 +4,13 @@ export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
   css: ["~/assets/css/tailwind.css"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
+  modules: ["@nuxt/fonts"]
 });
